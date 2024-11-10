@@ -5,8 +5,8 @@
 #define MAX_PRODUCTIONS 10
 #define MAX_SYMBOLS 10
 
-char productions[MAX_PRODUCTIONS][MAX_SYMBOLS];
-char first[MAX_PRODUCTIONS][MAX_SYMBOLS];
+char productions[10][10];
+char first[10][10];
 int production_count;
 
 void addToSet(char set[], char c) {
@@ -61,7 +61,7 @@ int main() {
     }
 
     // Initialize FIRST sets
-    for (int i = 0; i < MAX_PRODUCTIONS; i++) {
+    for (int i = 0; i < 10; i++) {
         first[i][0] = '\0';
     }
 
