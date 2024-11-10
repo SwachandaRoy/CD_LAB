@@ -2,9 +2,6 @@
 #include <ctype.h>
 #include <string.h>
 
-#define MAX_PRODUCTIONS 10
-#define MAX_SYMBOLS 10
-
 char productions[10][10];
 char first[10][10];
 int production_count;
